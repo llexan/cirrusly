@@ -704,8 +704,6 @@ select {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   padding: 1rem;
   box-sizing: border-box;
-  font-family: "latoregular", Arial, sans-serif;
-  font-size: 1rem;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   width: 100%; }
