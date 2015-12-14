@@ -19,17 +19,11 @@ select {
   display: block;
   font-family: $font-family;
   font-size: $font-size-base;
-}
-
-#{$all-text-inputs},
-select[multiple=multiple],
-textarea,
-select {
   background-color: $color-background;
   border: $border--lighter;
   border-radius: $border-radius;
   box-shadow: $form-box-shadow;
-  padding: $spacing-1;
+  padding: $spacing-2;
   box-sizing: border-box;
   font-family: $font-family;
   font-size: $font-size-base;

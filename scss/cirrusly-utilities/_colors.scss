@@ -25,6 +25,9 @@
 .text-gray       { color: $gray }
 .text-dark-gray  { color: $gray--darker }
 
+.text-orange     { color: $orange }
+.text-cirrusblue { color: $cirrusblue }
+
 //If using text-action on a link, make it over blue
 a.text-action:hover { color: $color-link }
 
