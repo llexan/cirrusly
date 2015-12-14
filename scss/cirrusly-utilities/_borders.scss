@@ -1,0 +1,31 @@
+/*------------------------------------*\
+    #Borders
+\*------------------------------------*/
+
+.border                 { border: $border; }
+.border-top             { border-top: $border; }
+.border-right           { border-right: $border; }
+.border-bottom          { border-bottom: $border; }
+.border-left            { border-left: $border; }
+
+.border--lighter        { border: $border--lighter; }
+.border-top--lighter    { border-top: $border--lighter; }
+.border-right--lighter  { border-right: $border--lighter; }
+.border-bottom--lighter { border-bottom: $border--lighter; }
+.border-left--lighter   { border-left: $border--lighter; }
+
+.border-none            { border: none }
+.border-top--none       { border-top: none; }
+.border-right--none     { border-right: none; }
+.border-bottom--none    { border-bottom: none; }
+.border-left--none      { border-left: none; }
+
+.rounded { border-radius: $border-radius }
+.circle  { border-radius: 50% }
+
+.rounded-top    { border-radius: $border-radius $border-radius 0 0 }
+.rounded-right  { border-radius: 0 $border-radius $border-radius 0 }
+.rounded-bottom { border-radius: 0 0 $border-radius $border-radius }
+.rounded-left   { border-radius: $border-radius 0 0 $border-radius }
+
+.not-rounded { border-radius: 0 }

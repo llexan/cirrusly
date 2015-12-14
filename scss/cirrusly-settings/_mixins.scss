@@ -1,0 +1,119 @@
+/*------------------------------------*\
+    #Mixins
+\*------------------------------------*/
+/** 
+ * Slightly lighten a color
+ * @access public
+ * @param {Color} $color - color to tint
+ * @param {Number} $percentage - percentage of `$color` in returned color
+ * @return {Color}
+ * https://css-tricks.com/snippets/sass/tint-shade-functions/
+ */
+
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+
+
+/** 
+ * Slightly darken a color
+ * @access public
+ * @param {Color} $color - color to tint
+ * @param {Number} $percentage - percentage of `$color` in returned color
+ * @return {Color}
+ * https://css-tricks.com/snippets/sass/tint-shade-functions/
+ */
+
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+
+
+/**
+ * Mixin to manage responsive breakpoints
+ * @author Hugo Giraudel
+ * @param {String} $breakpoint - Breakpoint name
+ * @require $breakpoints set in "cirrusly-settings/_variables.scss"
+ * https://css-tricks.com/snippets/sass/mixin-manage-breakpoints/
+ */
+
+@mixin breakpoint($breakpoint) {
+  @if (map-get($breakpoints, $breakpoint)) == null {
+    @content;
+  } @else {
+    @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+      @content;
+    }
+  }
+}
+
+@mixin generate-breakpoint-prefixes {
+ @each $breakpoint-name, $breakpoint-value in $breakpoints {
+   $breakpoint-prefix: "#{$breakpoint-name}-";
+   
+   @include breakpoint($breakpoint-name) {
+     
+     // Columns
+     .#{$breakpoint-prefix} {
+       @content;
+     }
+   }
+ }
+}
+
+
+
+/**
+ * Clearfix mixin brought to you by bourbon.io!
+ */
+
+@mixin clearfix {
+  &::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
+
+
+/**
+ * Stole this from bourbon.io, easy way to target all text-based-inputs.
+ */
+@function assign-inputs($inputs, $pseudo: null) {
+  $list: ();
+
+  @each $input in $inputs {
+    $input: unquote($input);
+    $input: if($pseudo, $input + ":" + $pseudo, $input);
+    $list: append($list, $input, comma);
+  }
+
+  @return $list;
+}
+
+$text-inputs-list: 'input[type="color"]',
+                   'input[type="date"]',
+                   'input[type="datetime"]',
+                   'input[type="datetime-local"]',
+                   'input[type="email"]',
+                   'input[type="month"]',
+                   'input[type="number"]',
+                   'input[type="password"]',
+                   'input[type="search"]',
+                   'input[type="tel"]',
+                   'input[type="text"]',
+                   'input[type="time"]',
+                   'input[type="url"]',
+                   'input[type="week"]',
+                   'textarea';
+
+$all-text-inputs:        assign-inputs($text-inputs-list);
+$all-text-inputs-active: assign-inputs($text-inputs-list, active);
+$all-text-inputs-focus:  assign-inputs($text-inputs-list, focus);
+$all-text-inputs-hover:  assign-inputs($text-inputs-list, hover);
+
+
+
+

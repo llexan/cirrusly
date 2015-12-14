@@ -1,0 +1,5 @@
+*.html
+*.svg
+*.png
+*.jpg
+scss/*.sass-cache

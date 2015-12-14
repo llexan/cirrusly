@@ -1,0 +1,116 @@
+/*------------------------------------*\
+    #Variables
+\*------------------------------------*/
+
+/** 
+ * Breakpoints
+ * Used in "cirrusly-settings/_mixins.scss" 
+ */
+
+$breakpoints: (
+    'xs': null,
+    'sm': 640px,
+    'md': 760px,
+    'lg': 1080px
+) !default;
+
+
+
+/* Fonts */
+
+@font-face {
+    font-family: 'latoregular';
+    src: url('../fonts/lato-regular-webfont.eot');
+    src: url('../fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lato-regular-webfont.woff') format('woff'),
+         url('../fonts/lato-regular-webfont.ttf') format('truetype'),
+         url('../fonts/lato-regular-webfont.svg#latoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$font-family:           "latoregular", Arial, sans-serif;
+$font-family--code:     monospace;
+
+
+
+/* Typography */
+
+$font-size-base: 1rem;
+
+$text-1:    2.25rem;   // 36px
+$text-2:    1.5rem;    // 24px
+$text-3:    1.25rem;   // 20px
+$text-4:    1.125rem;  // 18px
+$text-5:    1.0rem;    // 16px
+$text-6:    0.875rem;  // 14px
+
+$line-height-base: 1.5;
+
+$line-height-1: 1.3333;
+$line-height-2: 1;
+$line-height-3: 1.2;
+$line-height-4: 1.3333;
+$line-height-5: 1.5;
+$line-height-6: 1.7143;
+
+
+
+/* Color Fills */
+
+$cirrusblue:                        #0974BC;
+$cirrusblue--lighter: tint($cirrusblue, 20);
+$cirrusblue--darker:                #064773;
+
+$green:                      #5cb85c;
+$green--lighter:    tint($green, 20);
+$green--darker:    shade($green, 20);
+
+$orange:                     #F5A623;
+$orange--lighter:  tint($orange, 20);
+$orange--darker:  shade($orange, 20);
+
+$black:          #000;
+$gray:           #999;
+$gray--lighter:  #ddd;
+$gray--darker:   #333;
+$white:          #fff;
+
+
+$color-background:        $white;
+$color-font:              $gray--darker;
+$color-link:              $cirrusblue;
+$color-action:            $orange;
+$color-action--darker:    shade($color-action, 20);
+$color-border:            $gray--darker;
+
+
+
+/* Borders */
+
+$border:                1px solid $gray;
+$border--lighter:       1px solid $gray--lighter;
+$border-radius:         8px;
+
+
+
+/* Spacing */
+
+$spacing-1: 0.5rem;
+$spacing-2: 1.0rem;
+$spacing-3: 1.5rem;
+$spacing-4: 2.0rem;
+$spacing-5: 4.0rem;
+
+
+
+
+
+
+
+
+
+
+
+

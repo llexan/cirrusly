@@ -1,0 +1,60 @@
+/*------------------------------------*\
+    #Typography
+\*------------------------------------*/
+
+/* Font Sizes */
+
+@include generate-breakpoint-prefixes {
+   
+    &text-1    { font-size: $text-1 }
+    &text-2    { font-size: $text-2 }
+    &text-3    { font-size: $text-3 }
+    &text-4    { font-size: $text-4 }
+    &text-5    { font-size: $text-5 }
+    &text-6    { font-size: $text-6 }
+
+}
+
+
+
+/* Font Style and Weight */
+
+.normal { font-weight:    normal    }
+.bold   { font-weight:    bold      }
+.italic { font-style:     italic    }
+.caps   { text-transform: uppercase }
+
+
+
+/* Text Decoration */
+
+.decorate-none   { text-decoration: none         }
+.underline       { text-decoration: underline    }
+.line-through    { text-decoration: line-through }
+
+.nowrap      { white-space: nowrap }
+.break-word  { word-wrap: break-word }
+
+.truncate {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.list-reset {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Text Alignmnet */
+
+@include generate-breakpoint-prefixes {
+
+    &text-left   { text-align: left   }
+    &text-center { text-align: center }
+    &text-right  { text-align: right  }
+
+}
+
+

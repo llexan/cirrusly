@@ -1,0 +1,15 @@
+/*------------------------------------*\
+    #.hacks//
+\*------------------------------------*/
+
+//SVG logo needs a defined width and height to appear (for some reason)
+//Also turn off hover bg for logo, inherited from .button class
+
+.logo {
+    height: 48px;
+    width: 200px;
+
+    &:hover {
+        background-color: transparent;
+    }
+}

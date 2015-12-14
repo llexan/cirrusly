@@ -1,0 +1,52 @@
+/*------------------------------------*\
+    #Grid
+\*------------------------------------*/
+
+/* Grid Settings */
+$grid-columns:   12;
+$grid-gutter:    1em;
+$container-max-width: map-get($breakpoints, 'lg');
+
+
+
+.container {
+    max-width: $container-max-width;
+    margin: 0 auto;
+    @include clearfix;
+}
+
+.row {
+    @include clearfix;
+}
+
+[class*='col-'] {
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding: $grid-gutter;
+}
+
+@include generate-breakpoint-prefixes {
+    
+    @for $i from 1 through $grid-columns {
+        &col-#{$i} {
+            width: 100% / $grid-columns * $i;
+        }
+    }
+
+    @for $i from 1 through $grid-columns {
+        &shift-#{$i} {
+            margin-left: 100% / $grid-columns * $i;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

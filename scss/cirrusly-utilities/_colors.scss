@@ -1,0 +1,31 @@
+/*------------------------------------*\
+    #Colors
+\*------------------------------------*/
+
+/* Background Colors */
+
+.fill-cirrusblue-light { background-color: $cirrusblue--lighter }
+.fill-cirrusblue       { background-color: $cirrusblue }
+.fill-cirrusblue-dark  { background-color: $cirrusblue--darker }
+
+.fill-orange           { background-color: $orange }
+
+.fill-light-gray       { background-color: $gray--lighter }
+.fill-gray             { background-color: $gray }
+.fill-dark-gray        { background-color: $gray--darker }
+
+.fill-white            { background-color: $white }
+
+
+
+/* Text Colors */
+
+.text-white      { color: $white }
+.text-light-gray { color: $gray--lighter}
+.text-gray       { color: $gray }
+.text-dark-gray  { color: $gray--darker }
+
+//If using text-action on a link, make it over blue
+a.text-action:hover { color: $color-link }
+
+.is-transparent { color: rgba(255,255,255,0.4) }
