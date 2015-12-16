@@ -20,6 +20,7 @@
     white-space: nowrap;
     text-align: center;
     overflow: visible;
+    margin-bottom: $spacing-3;
 
     &:disabled {
         cursor: not-allowed;
