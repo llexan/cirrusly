@@ -13,14 +13,13 @@
     font-family: $font-family;
     font-size: $font-size-base;
     line-height: $line-height-base;
-    padding: $spacing-2 $spacing-1;
+    padding: $spacing-2;
     color: $white;
     user-select: none;
     vertical-align: middle;
     white-space: nowrap;
     text-align: center;
     overflow: visible;
-    margin-bottom: $spacing-3;
 
     &:disabled {
         cursor: not-allowed;
