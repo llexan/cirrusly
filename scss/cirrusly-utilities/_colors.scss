@@ -28,6 +28,21 @@
 
 
 
+/* Gradients */
+.gradient-cirrusblue {
+    /* can be treated like a fallback */
+    background-color: $cirrusblue--darker;
+
+    /* will be "on top", if browser supports it */
+    background-image: linear-gradient($cirrusblue--darker, $cirrusblue--lighter);
+
+    /* these will reset other properties, like background-position, but it does know what you mean */
+    background: $cirrusblue--darker;
+    background-image: linear-gradient($cirrusblue--darker, $cirrusblue--lighter);
+}
+
+
+
 /* Text Colors */
 
 .text-white      { color: $white }
