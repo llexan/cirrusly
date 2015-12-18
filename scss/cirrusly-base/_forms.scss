@@ -23,7 +23,7 @@ select {
   border: $border--lighter;
   border-radius: $border-radius;
   box-shadow: $form-box-shadow;
-  padding: $spacing-2 $spacing-1;
+  @include rem(padding, $spacing-2);
   box-sizing: border-box;
   transition: all 0.3s ease-in-out;
   width: 100%;
@@ -38,7 +38,7 @@ select {
 input[type="checkbox"],
 input[type="radio"] {
   display: inline-block;
-  margin-right: $spacing-1 / 2;
+  @include rem(margin-right, $spacing-1/2);
   width: auto;
 }
 
