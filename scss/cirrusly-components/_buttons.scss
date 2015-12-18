@@ -13,7 +13,7 @@
     font-family: $font-family;
     font-size: $font-size-base;
     line-height: $line-height-base;
-    padding: $spacing-2;
+    @include rem(padding, $spacing-2);
     color: $white;
     user-select: none;
     vertical-align: middle;
@@ -38,14 +38,14 @@
 .button--large   {
     font-weight: bold;
     @include breakpoint('sm') {
-        font-size: $text-2;
+        @include rem(font-size, $text-2);
     }
 }
 
 .button__description {
     @include clearfix;
     display: block;
-    font-size: $text-6;
+    @include rem(font-size, $text-6);
     font-weight: normal;
 }
 

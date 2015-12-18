@@ -32,6 +32,16 @@
 
 
 /**
+ * Convert rems to pxs for fallback with IE 9 and below
+ */
+@mixin rem($property, $value) {
+    #{$property}: $value * $font-size-base;
+    #{$property}: #{$value}rem;
+}
+
+
+
+/**
  * Mixin to manage responsive breakpoints
  * @author Hugo Giraudel
  * @param {String} $breakpoint - Breakpoint name
