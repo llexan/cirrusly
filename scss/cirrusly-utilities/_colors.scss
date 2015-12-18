@@ -18,18 +18,8 @@
 
 
 
-/* Social Colors */
-
-.fill-facebook { background-color: $fill-facebook }
-.fill-twitter  { background-color: $fill-twitter  }
-.fill-linkedin { background-color: $fill-linkedin }
-.fill-google   { background-color: $fill-google }
-.fill-youtube  { background-color: $fill-youtube }
-
-
-
 /* Gradients */
-.gradient-cirrusblue {
+.fill-cirrusblue--gradient {
     /* can be treated like a fallback */
     background-color: $cirrusblue--darker;
 
